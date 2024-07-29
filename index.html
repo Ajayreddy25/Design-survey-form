@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120">
+            
+            <label for="role">Current Role:</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="developer">Developer</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label>Do you like programming?</label>
+            <label>
+                <input type="radio" name="like-programming" value="yes" required> Yes
+            </label>
+            <label>
+                <input type="radio" name="like-programming" value="no" required> No
+            </label>
+            
+            <label for="recommend">Would you recommend this course to others?</label>
+            <select id="recommend" name="recommend" required>
+                <option value="definitely">Definitely</option>
+                <option value="maybe">Maybe</option>
+                <option value="not-sure">Not Sure</option>
+            </select>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
