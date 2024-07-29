@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design a Survey form</title>
-    <link rel="styleesheet" href="style.css">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
 </head>
 <body>
     <div class="container">
         <h1>Survey Form</h1>
-        <from id="survey-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="Age">Age:</label>
-            <input type="text" id="age" name="age"><br>
-            <label>Favorite type sports</label><br>
-            <input type="Radio" id="indoor" name="type" value="indoor">
-            <label for="indoor">Indoor</label><br>
-            <input type="Radio" id="outdoor" name="type" value="outdoor">
-            <label for="outdoor">Outdoor</label><br>
-            <input type="Radio" id="both" name="type" value="both">
-            <label for="both">Both</label>
-            <label for="favorite sports to watch">Favorite Sports to watch</label>
-            <input type="text" id="favorite sports to watch" name="favorite-sports"><br>
-            <label for="favorite sports to play">Favorite Sports to Play</label>
-            <input type="text" id="favorite sports to play" name="favorite-sports"><br>
-            <label for="favorite sports-person">Favorite Sports-person</label>
-            <input type="text" id="favorite sports-person" name="favorite-sports"><br>
-            <label for="feedback">Feedback to sports</label>
-            <input type="textarea" id="feedback" name="feedback"><br>
-            <button type="Submit">Submit</button>
-
-        </from>
+        <h4 id="errorText"></h4>
+        <form id="surveyForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label>Favorite type of Sport:</label>
+            <input type="radio" id="indoor" name="type" value="Indoor" required><label for="indoor">Indoor</label>
+            <input type="radio" id="outdoor" name="type" value="Outdoor" required><label for="outdoor">Outdoor</label>
+            <input type="radio" id="both" name="type" value="Both" required><label for="both">Both</label>
+            <label for="favorite-sport">Favorite Sport to Watch:</label>
+            <input type="text" id="favorite-sport" name="favorite-sport" required>
+            <label for="favorite--sport">Favorite Sport to Play:</label>
+            <input type="text" id="favorite--sport" name="favorite--sport" required>
+            <label for="favorite-sport-person">Favorite Sports-person:</label>
+            <input type="text" id="favorite-sport-person" name="favorite-sport-person" required>
+            <label for="feedback">Feedback :</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-    <script src="app.js"></script>
+    <script src="survey.js"></script>
 </body>
 </html>
