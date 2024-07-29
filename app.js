@@ -12,8 +12,8 @@ document.getElementById("surveyForm").addEventListener("submit", function (event
         showError(nameField, errorText, "Name should only contain English alphabets and spaces");
         return;
     }
-    if (isNaN(age) || age < 1 || age > 150) {
-        showError(ageField, errorText, "Age should be between 1 and 150");
+    if (isNaN(age) || age < 1 || age > 100) {
+        showError(ageField, errorText, "Age should be between 1 and 100");
         return;
     }
 
