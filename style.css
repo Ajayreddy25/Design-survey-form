@@ -1,6 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #4f4f9a;
+    background-image:  url(play.jpg);
     margin: 0;
     padding: 0;
     display: flex;
